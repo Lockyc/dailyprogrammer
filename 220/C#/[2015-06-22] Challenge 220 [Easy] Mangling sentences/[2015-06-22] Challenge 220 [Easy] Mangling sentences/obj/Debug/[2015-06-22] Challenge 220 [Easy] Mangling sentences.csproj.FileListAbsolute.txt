@@ -1,6 +1,0 @@
-H:\Projects\[2015-06-22] Challenge 220 [Easy] Mangling sentences\[2015-06-22] Challenge 220 [Easy] Mangling sentences\bin\Debug\[2015-06-22] Challenge 220 [Easy] Mangling sentences.exe.config
-H:\Projects\[2015-06-22] Challenge 220 [Easy] Mangling sentences\[2015-06-22] Challenge 220 [Easy] Mangling sentences\bin\Debug\[2015-06-22] Challenge 220 [Easy] Mangling sentences.exe
-H:\Projects\[2015-06-22] Challenge 220 [Easy] Mangling sentences\[2015-06-22] Challenge 220 [Easy] Mangling sentences\bin\Debug\[2015-06-22] Challenge 220 [Easy] Mangling sentences.pdb
-H:\Projects\[2015-06-22] Challenge 220 [Easy] Mangling sentences\[2015-06-22] Challenge 220 [Easy] Mangling sentences\obj\Debug\[2015-06-22] Challenge 220 [Easy] Mangling sentences.csprojResolveAssemblyReference.cache
-H:\Projects\[2015-06-22] Challenge 220 [Easy] Mangling sentences\[2015-06-22] Challenge 220 [Easy] Mangling sentences\obj\Debug\[2015-06-22] Challenge 220 [Easy] Mangling sentences.exe
-H:\Projects\[2015-06-22] Challenge 220 [Easy] Mangling sentences\[2015-06-22] Challenge 220 [Easy] Mangling sentences\obj\Debug\[2015-06-22] Challenge 220 [Easy] Mangling sentences.pdb
