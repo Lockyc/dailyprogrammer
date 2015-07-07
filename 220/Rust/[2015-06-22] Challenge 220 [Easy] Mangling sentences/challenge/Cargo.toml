@@ -1,0 +1,7 @@
+[package]
+name = "challenge"
+version = "0.1.0"
+authors = ["Lachlan Collins <lockyc@gmail.com>"]
+
+[dependencies]
+regex = "*"

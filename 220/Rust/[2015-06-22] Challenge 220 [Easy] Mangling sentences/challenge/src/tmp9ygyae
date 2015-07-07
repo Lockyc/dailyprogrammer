@@ -1,0 +1,6 @@
+fn main() {
+    let input1 = "This challenge doesn't seem so hard.";
+    let input2 = "This challenge doesn't seem so hard.";
+    let ou = "This challenge doesn't seem so hard.";
+    let input1 = "This challenge doesn't seem so hard.";
+}

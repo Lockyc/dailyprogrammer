@@ -1,0 +1,46 @@
+extern crate regex;
+use std::collections::HashMap;
+use regex::Regex;
+
+fn main() {
+    let input1 = "This challenge doesn't seem so hard.".to_string();
+    let input2 = "There are more things between heaven and earth, Horatio, than are dreamt of in your philosophy.".to_string();
+    let output1 = "Hist aceeghlln denos't eems os adhr.".to_string();
+    let output2 = "Eehrt aer emor ghinst beeentw aeehnv adn aehrt, Ahioort, ahnt aer ademrt fo in oruy hhilooppsy.".to_string();
+
+    println!("{}", challenge(input1));
+    if challenge(input1) == output1 {
+    	println!("WI");
+    }
+
+}
+
+fn challenge(input: String) -> String{
+    let words = input.split(' ');
+    let mut ret  = input.clone();
+    for word in words {
+        let mut nonAlphaNumeric = HashMap::new();
+        let mut uppercase = HashMap::new();
+        for i in 0..word.len() {
+            if word.chars().nth(i).unwrap().is_uppercase() {
+                uppercase.insert(i, true);
+            }
+            if !word.chars().nth(i).unwrap().is_alphanumeric() {
+                nonAlphaNumeric.insert(i, word.chars().nth(i).unwrap());
+            }
+        }
+        let re = Regex::new(r"[^a-zA-Z0-9]").unwrap();
+        let cleanWord = re.replace_all(word, "");
+        let mut sortedCleanWord: Vec<char> = cleanWord.chars().map(|c| c.to_lowercase().next().unwrap()).collect();
+        sortedCleanWord.sort();
+        for (key, value) in nonAlphaNumeric {
+            sortedCleanWord.insert(key, value);
+        }
+        for (key, value) in uppercase {
+            sortedCleanWord[key] = sortedCleanWord[key] .to_uppercase().next().unwrap();
+        }
+        let s: String = sortedCleanWord.into_iter().collect();
+        ret = ret.replace(word, &s);
+    }
+    ret
+}
