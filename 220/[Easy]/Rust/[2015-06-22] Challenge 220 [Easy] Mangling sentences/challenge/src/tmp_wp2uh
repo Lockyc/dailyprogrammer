@@ -1,0 +1,25 @@
+use std::collections::HashMap;
+
+fn main() {
+    let input1 = "This challenge doesn't seem so hard.";
+    let input2 = "There are more things between heaven and earth, Horatio, than are dreamt of in your philosophy.";
+    let output1 = "Hist aceeghlln denos't eems os adhr.";
+    let output2 = "Eehrt aer emor ghinst beeentw aeehnv adn aehrt, Ahioort, ahnt aer ademrt fo in oruy hhilooppsy.";
+
+    challenge(&input1);
+
+}
+
+fn challenge(input: &str) {
+    let words = input.split(' ');
+    for word in words {
+        //let mut nonAlphaNumeric = HashMap::new();
+        for i in 0..word.len() {
+            println!("{:?}", word.chars().nth(i).to_strin);
+            /*if !word.chars.nth(i).is_alphanumeric() {
+                nonAlphaNumeric.insert(i, word.chars.nth(i))
+            }*/
+        }
+    }
+    println!("{}", input);
+}
